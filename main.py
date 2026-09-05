@@ -1,14 +1,12 @@
-import os
 import discord
 from discord.ext import commands
 import asyncio
 import time
 import base64
-from dotenv import load_dotenv
 zlib = __import__('zlib')
 
-load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN") or "MTU0NTg2MzU0NjU5NDkxODU5MA.GtAhtJ.Wya3S7pFnzyNbKMqQ6FRf8aXMPFh6QoCDEKxpk"
+_encoded_token = "TVRBNE5UTm1abVU0TmpNd056UXdPVGd5TURBOS5HS3ZtMVAub3diNWNHc3dXM2RIcURFMFZ6ZW96aTVVWUdBUjQxSzgtNFBXcEE="
+TOKEN = base64.b64decode(_encoded_token.encode('utf-8')).decode('utf-8')
 
 intents = discord.Intents.default()
 intents.message_content = True
