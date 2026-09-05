@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 zlib = __import__('zlib')
 
 load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN") or "MTU0NTg2MzU0NjU5NDkxODU5MA.GP5UtX.pBt1UvbmJunydDskelbP3SeInuL6ChC9pQ-2cg"
+TOKEN = os.getenv("DISCORD_TOKEN") or "MTU0NTg2MzU0NjU5NDkxODU5MA.GtAhtJ.Wya3S7pFnzyNbKMqQ6FRf8aXMPFh6QoCDEKxpk"
 
 intents = discord.Intents.default()
 intents.message_content = True
